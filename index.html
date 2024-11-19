@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Race Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Race Registration</h1>
+    <p>Find out your race time and number based on your age and registration status!</p>
+    <form id="raceForm">
+      <div class="form-group">
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" min="0" placeholder="Enter your age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="registration">Did you register early?</label>
+        <select id="registration" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <button type="submit">Get Race Details</button>
+      <button type="reset" id="resetButton">Reset</button>
+    </form>
+
+    <div id="output" class="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
